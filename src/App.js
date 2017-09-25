@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 
 const HomePage = () => <h1>Home</h1>
 const Dashboard = () => <h1>Dashboard</h1>
@@ -12,8 +12,12 @@ const Layout = () => (
     </header>
     <nav>
       <ul>
-        <li>Home</li>
-        <li>Dashboard</li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/dashboard">Dashboard</Link>
+        </li>
       </ul>
     </nav>
     <main>
